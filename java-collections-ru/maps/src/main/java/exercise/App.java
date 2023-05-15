@@ -20,7 +20,7 @@ public class App {
 
     public static String toString(Map<String, Integer> wordCount) {
         StringBuilder sb = new StringBuilder();
-        sb.append("{");
+        sb.append("{\n");
         for (String word : wordCount.keySet()) {
             sb.append("  ").append(word).append(": ").append(wordCount.get(word)).append("\n");
         }
