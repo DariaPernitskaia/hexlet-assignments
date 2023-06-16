@@ -11,8 +11,6 @@ class AppTest {
     @Test
     void testTake() {
         // BEGIN
-
-            public static void main(String[] args) {
                 List<Integer> input1 = Arrays.asList(1, 2, 3, 4, 5);
                 int n1 = 3;
                 List<Integer> expected1 = Arrays.asList(1, 2, 3);
@@ -41,4 +39,3 @@ class AppTest {
                 System.out.println(result4.equals(expected4));
             }
         }
-    }
