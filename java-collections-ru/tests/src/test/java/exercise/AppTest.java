@@ -11,7 +11,6 @@ class AppTest {
     @Test
     void testTake() {
         // BEGIN
-        public class TakeTest {
 
             public static void main(String[] args) {
                 List<Integer> input1 = Arrays.asList(1, 2, 3, 4, 5);
@@ -43,4 +42,3 @@ class AppTest {
             }
         }
     }
-}
