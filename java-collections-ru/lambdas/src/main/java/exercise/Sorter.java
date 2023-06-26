@@ -8,4 +8,14 @@ import java.util.stream.Collectors;
 
 // BEGIN
 
+// BEGIN
+public class Sorter {
+    public static List<String> takeOldestMans(List<Map<String, String>> users) {
+        return users.stream()
+                .filter(user -> user.get("gender").equals("male"))
+                .sorted(Comparator.comparing(user -> LocalDate.parse(user.get("birthday"))))
+                .map(user -> user.get("name"))
+                .collect(Collectors.toList());
+    }
+}
 // END
