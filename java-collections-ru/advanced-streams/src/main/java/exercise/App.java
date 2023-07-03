@@ -1,12 +1,12 @@
 package exercise;
 
-import java.util.stream.Collectors;
 import java.util.Arrays;
-
+import java.util.LinkedHashMap;
+import java.util.Map;
 // BEGIN
 public class App {
     public static String getForwardedVariables(String content) {
-        Map<String, String> variables = new HashMap<>();
+        Map<String, String> variables = new LinkedHashMap<>();
 
         Arrays.stream(content.split("\\r?\\n"))
                 .filter(line -> line.contains("environment="))
